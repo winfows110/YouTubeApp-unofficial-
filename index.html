@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Desktop</title>
+    <title>YouTube Desktop - unofficial</title>
     <style>
-        /* 背景の動く光の演出 */
+        /* 背景と全体のデザイン */
         body {
             margin: 0;
             padding: 0;
@@ -20,7 +20,7 @@
             position: relative;
         }
 
-        /* 背後の赤いぼかし光 */
+        /* 赤いぼかし光のエフェクト */
         body::before {
             content: "";
             position: absolute;
@@ -43,7 +43,7 @@
             z-index: -1;
         }
 
-        /* メインカード（グラスモーフィズム） */
+        /* メインカード */
         .glass-card {
             background: rgba(30, 30, 30, 0.6);
             backdrop-filter: blur(20px);
@@ -63,7 +63,7 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin: 0 0 10px 0;
             letter-spacing: -1px;
         }
@@ -74,71 +74,11 @@
             color: #aaaaaa;
             line-height: 1.6;
             margin-bottom: 30px;
+            font-size: 0.95rem;
         }
 
-        /* YouTube風の赤いボタン */
+        /* ダウンロードボタン */
         .download-btn {
             display: inline-block;
             background: #ff0000;
-            color: white;
-            padding: 16px 40px;
-            border-radius: 50px;
-            font-weight: bold;
-            text-decoration: none;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(255,0,0,0.3);
-        }
-
-        .download-btn:hover {
-            background: #cc0000;
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(255,0,0,0.4);
-        }
-
-        /* インストール手順のバッジ */
-        .info-box {
-            margin-top: 30px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 16px;
-            font-size: 0.85rem;
-            text-align: left;
-        }
-
-        .info-box h3 { margin-top: 0; color: #fff; font-size: 1rem; }
-        .info-box ol { padding-left: 20px; color: #ccc; }
-        .info-box li { margin-bottom: 8px; }
-
-        .footer {
-            margin-top: 25px;
-            font-size: 0.75rem;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="glass-card">
-        <div class="app-icon">▶️</div>
-        <h1><span>You</span>Tube Desktop</h1>
-        <p>軽量・快速・シンプル。<br>F11フルスクリーンとミニプレイヤーを搭載した究極のプレイヤー。</p>
-        
-        <a href="YouTube_x64.appinstaller" class="download-btn">今すぐインストール</a>
-
-        <div class="info-box">
-            <h3>🚀 クイックスタート</h3>
-            <ol>
-                <li>上のボタンから <b>.appinstaller</b> をダウンロード。</li>
-                <li>ファイルを開き「インストール」をクリック。</li>
-                <li>スタートメニューから起動してログイン！</li>
-            </ol>
-        </div>
-
-        <div class="footer">
-            Windows 10 / 11 対応 | v1.0.1 | Developed by You
-        </div>
-    </div>
-
-</body>
-</html>
+            color
